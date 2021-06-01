@@ -1,0 +1,398 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+    <script src="https://kit.fontawesome.com/e56d82c862.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <!-- Start Nav-bar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a href="products.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="category.html" class="nav-link">Category</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="cart.html" class="nav-link">
+                  <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- search icon -->
+      <a class="search-icon" href="search.html" class="nav-link">
+        <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </a>
+    </nav>
+    <!-- End Nav-bar -->
+  
+
+    <!-- Products Page -->
+    <section class="products-page py-5 px-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" product-title col-10 mx-auto col-sm-6 text-center">
+                    <h1 class="text-capitalize my-5">Products</h1>
+                </div>
+            </div>
+            <!--Filter Column-->
+            <div class="row" id="filters">                
+                <div class="col-sm-3 my-3">
+                    <div class="row">
+                       <div class="col-10 mx-auto col-sm-6 text-center">
+                                <h1 class="text-capitalize product-title">Filters</h1>
+                        </div>
+                    </div>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                            Categories
+                        </li>
+                        <li class="list-group-item">
+                            <div class="dropdown">
+                                <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Clothes
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Men</a>
+                                    <a class="dropdown-item" href="#">Women</a>
+                                    <a class="dropdown-item" href="#">Kids</a>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="list-group-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Footware
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Men</a>
+                                    <a class="dropdown-item" href="#">Women</a>
+                                    <a class="dropdown-item" href="#">Kids</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Accessories
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Men</a>
+                                    <a class="dropdown-item" href="#">Women</a>
+                                    <a class="dropdown-item" href="#">Kids</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Skincare Products
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Men</a>
+                                    <a class="dropdown-item" href="#">Women</a>
+                                    <a class="dropdown-item" href="#">Kids</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cosmetics
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Men</a>
+                                    <a class="dropdown-item" href="#">Women</a>
+                                    <a class="dropdown-item" href="#">Kids</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Price Range -->
+                        <div>
+                            <form>
+                                <div class="form-group my-5" id="Range">
+                                <label for="formControlRange" id="range-title"><b>Price Range</b></label>
+                                <input type="range" min="100" max="1000" step="100" class="form-control-range" id="formControlRange">
+                                </div>
+                            </form>
+                            <!-- <div class="d-flex justify-content-betweeen">
+                                <label>100</label>
+                                <label>1000</label>
+                            </div> -->
+                        </div>
+            </div>
+            <!--Products-->
+            <div class="col-sm-9">
+                <div class="row product-list">
+                <!--First Product-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-1.jpg">
+                            <img src="Images/latest-1.jpg" alt="" class="card-img-top product-img">
+                        </a>                   
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Hoodies</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-sign mx-1"> 300</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--Second products-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-2.jpg">
+                            <img src="Images/latest-2.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Lehengas</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-sign mx-1"> 2000</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--Third products-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-3.jpg">
+                            <img src="Images/latest-3.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Jeans</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-sign mx-1"> 500</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--Fourth product-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-4.jpg">
+                            <img src="Images/latest-4.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Stilettos</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-sign mx-1"> 700</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--Fifth product-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-5.jpg">
+                            <img src="Images/latest-5.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Watches</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-sign mx-1"> 1500</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--sixth product-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-6.jpg">
+                            <img src="Images/latest-6.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Cosmetics</h5>
+                        <p>Below 
+                            <i class="fas fa-rupee-sign mx-1"> 500</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--Seventh product-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-7.jpg">
+                            <img src="Images/latest-7.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Perfumes</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-sign mx-1"> 350</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--Eighth product-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-8.jpg">
+                            <img src="Images/latest-8.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Hand Bags</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-signmx-1"> 500</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--ninth product-->
+                <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card item">
+                    <div class="img-container">
+                        <a href="Images/latest-9.jpg">
+                            <img src="Images/latest-9.jpg" alt="" class="card-img-top product-img">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                    <div class="card-text d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Shoes</h5>
+                        <p>Below
+                            <i class="fas fa-rupee-sign mx-1"> 600</i>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!--End of Latest Products-->
+                  
+      <!--Footer-->
+    <section class="footer py-5 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1 col-lg-1 ">
+              <h1>Logo</h1>
+            </div>
+                    
+            <div class="col-md-3 col-lg-3 my-3">
+              <h5 class="text-capitalize">Quick Links</h5>
+              <ul type="none">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Offers and Discounts</a></li>
+                <li><a href="#">Get Coupon</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 my-3">
+              <h5 class="text-capitalize">New Products</h5>
+              <ul type="none">
+                <li><a href="#">Woman Cloth</a></li>
+                <li><a href="#">Fashion Accessories</a></li>
+                <li><a href="#">Man Accessories</a></li>
+                <li><a href="#">Footware</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-lg-4 my-3">
+              <h5 class="text-capitalize">Support</h5>
+              <ul type="none">
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Report a Payment Issue</a></li>
+              </ul>
+            </div>
+      </section>  
+
+
+      <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-caret-up"></i></button>
+
+    <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+    <div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
+      <strong>when the user starts to scroll the page</strong>.</div>
+    
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+    
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    
+  
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
