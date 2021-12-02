@@ -92,7 +92,9 @@ body {
 }
 .single-item,
 .item {
+  width: 20rem;
   display: inline-block;
+  justify-content: space-around;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgb(247, 241, 241);
@@ -100,6 +102,9 @@ body {
   transition-duration: 0.3s;
   transition-property: transform;
   cursor: pointer;
+}
+.product-img {
+  width: 20rem;
 }
 .single-item::before,
 .item::before {
